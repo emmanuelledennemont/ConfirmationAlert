@@ -6,8 +6,36 @@
 //
 import SwiftUI
 
-
 struct ConfirmationView: View {
+    @State private var showConfirmation = false
+
+    var body: some View {
+        ZStack {
+            VStack {
+                Button(action: {
+                    showConfirmation.toggle()
+                }) {
+                    Text("Show Confirmation")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+            }
+            .zIndex(1)
+            
+            if showConfirmation {
+                CustomAlertView(show: $showConfirmation)
+                    .zIndex(2)
+            }
+        }
+        .background(Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all))
+    }
+}
+
+struct CustomAlertView: View {
+    @Binding var show: Bool
+    
     var body: some View {
         VStack {
             Spacer()
@@ -27,7 +55,7 @@ struct ConfirmationView: View {
                     .padding(.horizontal, 20)
                 
                 Button(action: {
-                    // Action à exécuter lorsque le bouton est pressé
+                    show = false
                 }) {
                     Text(ConfirmationText.buttonTitle.rawValue)
                         .foregroundColor(.orange)
@@ -42,7 +70,7 @@ struct ConfirmationView: View {
             
             Spacer()
         }
-        .background(Color(UIColor.systemGray6).edgesIgnoringSafeArea(.all))
+        .background(Color.black.opacity(0.4).edgesIgnoringSafeArea(.all))
     }
 }
 
