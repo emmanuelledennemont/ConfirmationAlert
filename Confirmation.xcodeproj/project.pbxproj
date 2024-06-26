@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D98C4A932C2BFB520010CA2D /* ConfirmationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C4A922C2BFB520010CA2D /* ConfirmationApp.swift */; };
-		D98C4A952C2BFB520010CA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C4A942C2BFB520010CA2D /* ContentView.swift */; };
+		D98C4A952C2BFB520010CA2D /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C4A942C2BFB520010CA2D /* ConfirmationView.swift */; };
 		D98C4A972C2BFB550010CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98C4A962C2BFB550010CA2D /* Assets.xcassets */; };
 		D98C4A9A2C2BFB550010CA2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98C4A992C2BFB550010CA2D /* Preview Assets.xcassets */; };
+		D98C4AA32C2BFC4D0010CA2D /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98C4AA22C2BFC4D0010CA2D /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D98C4A8F2C2BFB520010CA2D /* Confirmation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Confirmation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98C4A922C2BFB520010CA2D /* ConfirmationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationApp.swift; sourceTree = "<group>"; };
-		D98C4A942C2BFB520010CA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D98C4A942C2BFB520010CA2D /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		D98C4A962C2BFB550010CA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D98C4A992C2BFB550010CA2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D98C4AA22C2BFC4D0010CA2D /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		D98C4A912C2BFB520010CA2D /* Confirmation */ = {
 			isa = PBXGroup;
 			children = (
+				D98C4AA02C2BFC100010CA2D /* Model */,
+				D98C4AA12C2BFC1C0010CA2D /* View */,
 				D98C4A922C2BFB520010CA2D /* ConfirmationApp.swift */,
-				D98C4A942C2BFB520010CA2D /* ContentView.swift */,
 				D98C4A962C2BFB550010CA2D /* Assets.xcassets */,
 				D98C4A982C2BFB550010CA2D /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				D98C4A992C2BFB550010CA2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D98C4AA02C2BFC100010CA2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D98C4AA22C2BFC4D0010CA2D /* Text.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D98C4AA12C2BFC1C0010CA2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D98C4A942C2BFB520010CA2D /* ConfirmationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98C4A952C2BFB520010CA2D /* ContentView.swift in Sources */,
+				D98C4A952C2BFB520010CA2D /* ConfirmationView.swift in Sources */,
+				D98C4AA32C2BFC4D0010CA2D /* Text.swift in Sources */,
 				D98C4A932C2BFB520010CA2D /* ConfirmationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
